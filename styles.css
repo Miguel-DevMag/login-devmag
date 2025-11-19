@@ -1,0 +1,131 @@
+:root {
+    --color-primaria: #e3dcf4;
+    --border-Container: 2px solid #7d67b3;
+    --border-button: 1px solid #9284e0;
+    --box-shadow: inset 0 -3em 3em rgba(167, 0, 200, 0.3),
+        0.3em 0.3em 1em rgba(247, 0, 255, 0.6);
+    --background-color: #8d7caf;
+    --backgroundHover: #6a5b8b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(imagem/img.jpg);
+    background-size: cover;
+    background-position: center;
+    min-width: 100vh;
+    min-height: 100vh;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: var(--border);
+    padding: 20px;
+    width: 440px;
+    box-shadow: var(--box-shadow);
+    border-radius: 20px;
+    color: white;
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--color-primaria);
+    margin-bottom: 15px;
+}
+
+.box-input {
+    position: relative;
+}
+
+.box-input input {
+    width: 100%;
+    padding: 13px 30px 13px 13px;
+    border: 1px solid #fff;
+    color: white;
+    outline: none;
+    border-radius: 10px;
+    margin: 10px 0;
+    background-color: transparent;
+}
+
+.box-input input::placeholder {
+    color: #fff;
+}
+
+.box-input i {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    color: #ffffff;
+    transform: translateY(-50%);
+    font-size: 19px;
+}
+
+.Renember {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.Renember input {
+    accent-color: var(--background-color);
+}
+
+.Renember label {
+    color: var(--color-primaria);
+}
+
+.Renember a {
+    color: var(--color-primaria);
+    text-decoration: none;
+    transition: 2s;
+}
+
+.Renember a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-size: 22px;
+    font-weight: 600;
+    background-color: var(--background-color);
+    color: var(--color-primaria);
+    transition: 1s;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: transparent;
+    border: var(--border-button);
+}
+
+.text p {
+    text-align: center;
+    color: var(--color-primaria);
+    margin-top: 10px;
+}
+
+.text span {
+    color: white;
+    font-weight: 600;
+}
+
+.text span:hover {
+    text-decoration: underline;
+}
